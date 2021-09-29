@@ -4,4 +4,6 @@ This directory stores the files, in the correct structure, for the digital editi
 
 The edition itself was build on an instance of Digital Mappa hosted on a Schoenberg Institute for Manuscript Studies server. It is here: https://sims2.digitalmappa.org/113
 
+All data is in the "data" folder.
+
 Please direct any questions to Whitney Trettien: trettien@english.upenn.edu

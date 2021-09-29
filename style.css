@@ -1,0 +1,126 @@
+/* || General setup */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img{
+  display: inline-block;
+  margin: 10px;
+}
+p.inlineimg {
+  text-align:center;
+}
+#frame {
+  border:0;
+  width:100%;
+  overflow:hidden;
+  position:absolute;
+  top:40px;
+  left:0;
+  color: #212121;
+  padding:0px;
+  margin:0px;
+  background-image: url("marbledpaper.jpg");
+  background-attachment: fixed;
+}
+.intro {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top:0px;
+  background-color: #f2f2f2;
+  padding:0px;
+  overflow: scroll;
+  box-shadow: 0px 0px 5px 5px #696969;
+}
+.intro h1,h2{
+  padding: 30px 30px 10px 30px;
+  margin:0px;
+}
+.intro p{
+  padding: 10px 50px 10px 50px;
+  margin: 0px;
+}
+a{
+  color: #83524a;
+}
+.intro a.prev{
+  text-decoration: none;
+  font-style:italic;
+  color: #616161;
+  float:left;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom:50px;
+}
+.intro a.next{
+  text-decoration: none;
+  font-style:italic;
+  color: #616161;
+  float:right;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom:50px;
+}
+p.caption{
+  font-size: 11px;
+  color: gray;
+  font-style:italic;
+  text-align:center;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ul {
+  margin-left:50px;
+  margin-right:50px;
+}
+.blue{
+  background-color:#82b1ff;
+}
+.yellow{
+  background-color:#ffeb3b;
+}
+.coral{
+  background-color: #fe887c;
+}
+.orange{
+  background-color:#fbb44c;
+}
+.topnav {
+  height:40px;
+  width:100%;
+  padding:0;
+  margin: 0;
+  position:fixed;
+  top:0px;
+  right:0px;
+  overflow: hidden;
+  background: linear-gradient(#414141, #212121);
+  z-index:999;
+}
+.topnav a {
+  float:left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.topnav a:hover {
+  color: #fff;
+}
+.topnav a.active {
+  color: white;
+}

@@ -1,0 +1,137 @@
+
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>Sources in Susanna Collet's Commonplace Book (1635)</title>
+<script src="d3.js"></script>
+<script src="d3plus.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	.pie{
+		float:left;
+		width: 50%;
+		text-align: center;
+	}
+	#header{
+		margin-left: 5%;
+		margin-right: 30%;
+	}
+	h3{
+		float: left;
+		width: 50%;
+		text-align:center;
+	}
+	p{
+		margin-left: 5%;
+	}
+	a{
+		text-decoration:none;
+		font-weight: heavy;
+		color: #3e4575;
+
+	}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>Sources in Susanna Collet's Commonplace Book</h1>
+<p>Pie charts comparing the different sources of the scriptural and secular sections of <a href="https://digitalbookhistory.com/colletscommonplace/" target="_blank">Susanna Collet's commonplace book</a> (1635), organized by book of the Bible and by author, respectively.</p>
+</div>
+
+<h3>Sources of scriptural excerpts</h3>
+<h3>Sources of secular excerpts</h3>
+<div id="scriptural" class="pie"></div>
+<div id="secular" class="pie"></div>
+
+<script>
+  var secular = [
+    {"number of excerpts": 117, "name": "Joseph Hall"},
+    {"number of excerpts": 34, "name": "Robert Dallington"},
+    {"number of excerpts": 29, "name": "Francis Bacon"},
+		{"number of excerpts": 17, "name": "Philip Sidney"},
+		{"number of excerpts": 4, "name": "Edwin Sandys"},
+		{"number of excerpts": 3, "name": "Le Sylvain"},
+		{"number of excerpts": 3, "name": "Leonard Wright"},
+		{"number of excerpts": 2, "name": "John Hayward"},
+		{"number of excerpts": 2, "name": "Pedro Mexia"},
+		{"number of excerpts": 2, "name": "Caleb Dalechamp"},
+		{"number of excerpts": 2, "name": "Thomas Adams"},
+		{"number of excerpts": 2, "name": "Thomas Wright"},
+		{"number of excerpts": 2, "name": "Edward Sutton"},
+		{"number of excerpts": 1, "name": "John Downame"},
+		{"number of excerpts": 1, "name": "John Fox"},
+		{"number of excerpts": 1, "name": "John Skinner"},
+		{"number of excerpts": 1, "name": "John Speed"},
+		{"number of excerpts": 1, "name": "Lodowick Bryskett"},
+		{"number of excerpts": 1, "name": "N. T."},
+		{"number of excerpts": 1, "name": "Neils Hemingsen"},
+		{"number of excerpts": 1, "name": "Peter Heylyn"},
+		{"number of excerpts": 1, "name": "Richard Hooker"},
+		{"number of excerpts": 1, "name": "Charles Goodwell"},
+		{"number of excerpts": 1, "name": "Thomas Smith"},
+		{"number of excerpts": 1, "name": "William Pemble"},
+		{"number of excerpts": 1, "name": "William Warner"},
+		{"number of excerpts": 1, "name": "Guillaume du Vair"},
+		{"number of excerpts": 1, "name": "Anthony Stafford"},
+		{"number of excerpts": 43, "name": "unknown"}
+  ]
+  var scriptural = [
+		{"number of excerpts": 162, "name": "Ecclesiasticus"},
+		{"number of excerpts": 156, "name": "Proverbs"},
+		{"number of excerpts": 16, "name": "Psalms"},
+		{"number of excerpts": 12, "name": "Matthew"},
+		{"number of excerpts": 7, "name": "Ecclesiastes"},
+		{"number of excerpts": 6, "name": "Luke"},
+		{"number of excerpts": 6, "name": "James"},
+		{"number of excerpts": 5, "name": "Leviticus"},
+		{"number of excerpts": 4, "name": "Deuteronomy"},
+		{"number of excerpts": 4, "name": "Tobit"},
+		{"number of excerpts": 4, "name": "1 Corinthians"},
+		{"number of excerpts": 4, "name": "Ephesians"},
+		{"number of excerpts": 4, "name": "John"},
+		{"number of excerpts": 3, "name": "Job"},
+		{"number of excerpts": 3, "name": "Wisdom of Solomon"},
+		{"number of excerpts": 3, "name": "1 John"},
+		{"number of excerpts": 3, "name": "Collosians"},
+		{"number of excerpts": 2, "name": "Exodus"},
+		{"number of excerpts": 2, "name": "Isaiah"},
+		{"number of excerpts": 2, "name": "Zechariah"},
+		{"number of excerpts": 2, "name": "1 Timothy"},
+		{"number of excerpts": 2, "name": "Revelation"},
+		{"number of excerpts": 2, "name": "Romans"},
+		{"number of excerpts": 1, "name": "1 Esdras"},
+		{"number of excerpts": 1, "name": "Baruch"},
+		{"number of excerpts": 1, "name": "Daniel"},
+		{"number of excerpts": 1, "name": "Micah"},
+		{"number of excerpts": 1, "name": "Zephaniah"},
+		{"number of excerpts": 1, "name": "1 Thessalonians"},
+		{"number of excerpts": 1, "name": "2 Timothy"},
+		{"number of excerpts": 1, "name": "Galatians"},
+		{"number of excerpts": 1, "name": "Hebrew"},
+		{"number of excerpts": 1, "name": "Mark"}
+  ]
+
+  d3plus.viz()
+    .container("#scriptural")
+    .data(scriptural)
+    .type("pie")
+    .id("name")
+    .size("number of excerpts")
+	.tooltip({"share": false})
+    .draw()
+
+  d3plus.viz()
+    .container("#secular")
+    .data(secular)
+    .type("pie")
+    .id("name")
+    .size("number of excerpts")
+	.tooltip({"share": false})
+    .draw()
+</script>
+</body>
+</html>

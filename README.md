@@ -1,5 +1,4 @@
-# colletscommonplace
-Digital edition of Susanna Collet's commonplace book (1635)
+# Digital edition of Susanna Collet's commonplace book (1635)
 
 This directory stores the files, in the correct structure, for the digital edition website: https://digitalbookhistory.com/colletscommonaplace/
 
